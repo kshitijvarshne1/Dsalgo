@@ -29,6 +29,7 @@ void twoPointer(int a[], int n, int key) {
             j--;
         }
     }
+    return;
 }
 
 int main() {
