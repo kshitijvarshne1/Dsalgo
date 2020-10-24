@@ -42,7 +42,7 @@ bool isSafe(int board[][10], int i, int j, int n) {
             y++;
         }
     }
-    //The Pasition is now safe for col and diagonal
+    //The Position is now safe for col and diagonal
     return true;
 }
 
