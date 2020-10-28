@@ -38,7 +38,7 @@ int main() {
             }
         }
     }
-    cout << "Max Sum:- " << maxSum << endl;
+    cout << "Max Sum:-- " << maxSum << endl;
     for (int i = left; i <= right; i++) {
         cout << a[i] << ", ";
     }
