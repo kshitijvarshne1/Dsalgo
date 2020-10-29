@@ -16,7 +16,18 @@
 
 using namespace std;
 
+int findZeores(int n) {
+    int ans = 0;
+    for (int i = 5; n / i >= 1; i = i * 5) {
+        ans = ans + (n / i);
+    }
+    return ans;
+}
+
 int main() {
-    return 0;
+    long long int n;
+    cin >> n;
+    cout << findZeores(n);
+
 }
 
