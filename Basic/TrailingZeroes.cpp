@@ -2,7 +2,7 @@
 *   Created by CLion IDE.
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 29-Oct-20
-*   Time: 4:21 PM
+*   Time: 4:22 PM
 *   File: TrailingZeroes.cpp
 */
 # include<iostream>
