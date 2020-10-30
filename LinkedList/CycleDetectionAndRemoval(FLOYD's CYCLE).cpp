@@ -36,7 +36,6 @@ bool floydCycleRemoval(Node *head)
 
 */
 
-
 # include<iostream>
 # include<climits>
 # include<cmath>
