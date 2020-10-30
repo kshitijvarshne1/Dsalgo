@@ -37,6 +37,8 @@ void insertAtHead(node *&head, int d) {
     head = n;
 }
 
+//Runner technique
+// slow horse and fast horse
 node *midpoint(node *head) {
     if (head == NULL or head->next == NULL) {
         return head;
