@@ -57,8 +57,6 @@ node *kthNodeFromTheEnd(node *head, int k) {
     for (int i = 0; i < k; i++) {
         fast = fast->next;
     }
-
-
     while (fast != NULL) {
         fast = fast->next;
         slow = slow->next;
