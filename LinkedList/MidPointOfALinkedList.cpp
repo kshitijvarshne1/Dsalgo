@@ -45,6 +45,14 @@ node *midpoint(node *head) {
     }
     node *slow = head;
     node *fast = head;
+    /*
+     * for odd we get n/2
+     * for even we get n/2
+     * if we want same for odd but for even we want (n/2)+1
+     * then do one thing in line no 47 is that
+     *  node *fast = head->next;
+     *
+     * */
 
     while (fast != NULL and fast->next != NULL) {
         fast = fast->next->next;
