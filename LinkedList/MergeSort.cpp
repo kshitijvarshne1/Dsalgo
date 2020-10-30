@@ -56,13 +56,12 @@ node *midpoint(node *head) {
     node *fast = head->next;
     /*
      * for odd we get n/2
-     * for even we get n/2
-     * if we want same for odd but for even we want (n/2)+1
+     * for even we get (n/2)+1
+     * if we want same for odd but for even we want (n/2)
      * then do one thing in line no 47 is that
-     *  node *fast = head->next;
+     *  node *fast = head;
      *
      * */
-
     while (fast != NULL and fast->next != NULL) {
         fast = fast->next->next;
         slow = slow->next;
@@ -88,8 +87,6 @@ node *mergeSortedTwoLinkedList(node *a, node *b) {
         c->next = mergeSortedTwoLinkedList(a, b->next);
     }
     return c;
-
-
 }
 
 node *mergeSort(node *head) {
