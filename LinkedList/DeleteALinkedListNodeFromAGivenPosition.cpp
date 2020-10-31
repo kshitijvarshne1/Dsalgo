@@ -50,34 +50,26 @@ void reverseLinkedList(node *&head) {
         c = n;
     }
     head = p;
-
 }
 
 void delete1(node *&head, int position) {
-
     if (head == NULL)
         return;
-
     node *temp = head;
-
     if (position == 0) {
         head = temp->next;
         delete (temp);
         return;
     }
-
     for (int i = 0; temp != NULL && i < position - 1; i++) {
         temp = temp->next;
     }
-
     if (temp == NULL || temp->next == NULL) {
         return;
     }
 
     node *next = temp->next->next;
-
     delete (temp->next);
-
     temp->next = next;
 }
 
@@ -87,7 +79,6 @@ void print(node *head) {
         head = head->next;
     }
 }
-
 
 int main() {
 
@@ -109,8 +100,6 @@ int main() {
         cout << endl;
 
     }
-
-
     return 0;
 }
 
