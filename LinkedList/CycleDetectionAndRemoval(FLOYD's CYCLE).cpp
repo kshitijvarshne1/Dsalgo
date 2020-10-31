@@ -12,10 +12,10 @@
 // If the cycle is present, modify the linked list to remove the cycle as well
 
 /*
-bool floydCycleRemoval(Node *head)
+bool floydCycleRemoval(node *head)
 {
-    Node* slow = head;
-    Node* fast =head;
+    node* slow = head;
+    node* fast =head;
     while( fast!=NULL && fast->next!=NULL){
         fast=fast->next->next;
         slow=slow->next;
