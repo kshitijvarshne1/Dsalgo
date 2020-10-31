@@ -26,7 +26,6 @@ public:
         data = d;
         next = NULL;
     }
-
 };
 
 void insertAtTail(node *&head, int data) {
@@ -43,18 +42,14 @@ void insertAtTail(node *&head, int data) {
     return;
 }
 
-
 node *K_append(node *head, int k) {
     node *fast = head;
     node *slow = head;
-
     int c = 1;
-
     while (c < k) {
         fast = fast->next;
         c++;
     }
-
     node *prev;
     while (fast->next != NULL) {
         prev = slow;
@@ -62,15 +57,12 @@ node *K_append(node *head, int k) {
         slow = slow->next;
         //prev=prev->next;
     }
-
     fast->next = head;
     head = slow;
     prev->next = NULL;
 
-
     return head;
 }
-
 
 void print(node *head) {
     while (head != NULL) {
@@ -79,21 +71,16 @@ void print(node *head) {
     }
 }
 
-
 int main() {
 
     int n1;
     node *head = NULL;
-
     int i, x, k;
-
     cin >> n1;
     for (i = 0; i < n1; i++) {
         cin >> x;
         insertAtTail(head, x);
     }
-
-
     cin >> k;
     k = k % n1;
     if (k == 0) {
@@ -103,8 +90,6 @@ int main() {
 
         print(final);
     }
-
-
     return 0;
 }
 
