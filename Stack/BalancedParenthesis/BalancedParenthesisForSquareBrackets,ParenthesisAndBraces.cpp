@@ -14,7 +14,6 @@
 # include<iomanip>
 # include<vector>
 # include<stack>
-
 using namespace std;
 
 bool isValidExpression(char *str) {
@@ -64,7 +63,6 @@ int main() {
     } else {
         cout << "No";
     }
-
     return 0;
 }
 
