@@ -90,7 +90,6 @@ bool pallindromeCheck(node *head) {
         head = head->next;
     }
     return true;
-
 }
 
 int main() {
