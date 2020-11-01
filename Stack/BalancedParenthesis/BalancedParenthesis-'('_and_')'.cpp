@@ -41,7 +41,6 @@ int main() {   // This program for ->this type of parenthesis --> '('    -->>')'
     } else {
         cout << "NO";
     }
-
     return 0;
 }
 
