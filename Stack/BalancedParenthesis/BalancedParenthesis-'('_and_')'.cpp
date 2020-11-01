@@ -17,7 +17,32 @@
 
 using namespace std;
 
-int main() {
+bool isValidExpression(char *str) {
+    stack<char> s;
+    for (int i = 0; str[i] != '\0'; i++) {
+        char ch = str[i];
+        if (ch == '(') {
+            s.push(ch);
+        } else if (ch == ')') {
+            if (s.empty() or s.top() != '(') {
+                return false;
+            }
+            s.pop();
+        }
+    }
+    return s.empty();
+}
+
+int main() {   // This program for ->this type of parenthesis --> '('    -->>')'
+    char s[100];
+    cin >> s;
+    if (isValidExpression(s)) {
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+
     return 0;
 }
+
 
