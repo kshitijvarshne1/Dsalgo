@@ -14,7 +14,6 @@
 # include<iomanip>
 # include<vector>
 # include<stack>
-
 using namespace std;
 
 void stockSpan(int prices[], int n, int span[]) {
