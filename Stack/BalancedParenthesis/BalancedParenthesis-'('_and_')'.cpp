@@ -37,9 +37,9 @@ int main() {   // This program for ->this type of parenthesis --> '('    -->>')'
     char s[100];
     cin >> s;
     if (isValidExpression(s)) {
-        cout << "YES";
+        cout << "Yes";
     } else {
-        cout << "NO";
+        cout << "No";
     }
     return 0;
 }
