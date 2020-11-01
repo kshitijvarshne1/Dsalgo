@@ -52,8 +52,6 @@ int main() {
         cout << span[i] << " ";
     }
     cout << "END";
-
-
     return 0;
 }
 
