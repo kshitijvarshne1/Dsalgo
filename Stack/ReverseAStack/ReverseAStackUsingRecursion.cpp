@@ -28,7 +28,6 @@ void insertAtBottom(stack<int> &s, int x) {
     s.pop();
     insertAtBottom(s, x);
     s.push(data);
-
 }
 
 
@@ -60,7 +59,6 @@ int main() {
         cout << s.top() << endl;
         s.pop();
     }
-
     return 0;
 }
 
