@@ -59,7 +59,7 @@ void print(node *head) {
     print(head->next);
 }
 
-bool pallindromeCheck(node *head) {
+bool palindromeCheck(node *head) {
     node *slow = head;
     node *fast = head;
     node *mid = NULL;
@@ -96,7 +96,7 @@ int main() {
     int k;
     node *head = NULL;
     take_input(head);
-    if (pallindromeCheck(head)) {
+    if (palindromeCheck(head)) {
         cout << "true";
     } else {
         cout << "false";
