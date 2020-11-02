@@ -19,7 +19,7 @@
 using namespace std;
 
 template<typename T>
-class stack {
+class Stack {
     queue<T> q1, q2;
 public:
     void push(T x) {
@@ -70,12 +70,11 @@ public:
 };
 
 int main() {
-    stack<int> s;
+    Stack<int> s;
 
     s.push(1);
     s.push(2);
     s.push(3);
-
     while (!s.empty()) {
         cout << s.top() << " ";
         s.pop();
