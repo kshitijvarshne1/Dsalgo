@@ -45,7 +45,7 @@ public:
 
     }
 
-    int top() {
+    T top() {
         while (q1.size() > 1) {
             T element = q1.front();
             q2.push(element);
