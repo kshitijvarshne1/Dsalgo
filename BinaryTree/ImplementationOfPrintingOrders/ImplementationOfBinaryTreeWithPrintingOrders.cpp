@@ -35,7 +35,6 @@ public:
 node *buildTree() {
     int d;
     cin >> d;
-
     if (d == -1) {
         return NULL;
     }
