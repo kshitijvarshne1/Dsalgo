@@ -32,7 +32,6 @@ int main() {
         visited[i] = -1;
     }
 
-
     visited[a[0]] = 0;
 
     for (int i = 1; i < n; i++) {
@@ -56,8 +55,6 @@ int main() {
         max_len = current_len;
     }
     cout << max_len << endl;
-
-
     return 0;
 }
 
