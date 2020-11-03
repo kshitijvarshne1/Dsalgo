@@ -18,11 +18,11 @@
 
 using namespace std;
 
-template<typename s>
+template<typename T>
 class Queue {
-    stack<s> s1, s2;
+    stack<T> s1, s2;
 public:
-    void push(s x) {
+    void push(T x) {
         s1.push(x);
     }
 
@@ -34,7 +34,7 @@ public:
             return;
         }
         while (s1.size() > 1) {
-            s element = s1.top();
+            T element = s1.top();
             s2.push(element);
             s1.pop();
         }
@@ -45,23 +45,24 @@ public:
 
     }
 
-    int front() {
-        s last = s1.top();
+    T front() {
+        T last = s1.top();
         s1.pop();
         s2.push(last);
 
         while (s1.size() > 1) {
-            s element = s1.top();
+            T element = s1.top();
             s2.push(element);
             s1.pop();
         }
         //1 elemens in s1
 
+
         swap(s1, s2);
         return last;
     }
 
-    int size() {
+    T size() {
         return s1.size() + s2.size();
     }
 
@@ -86,5 +87,7 @@ int main() {
     }
     return 0;
 }
+
+
 
 
