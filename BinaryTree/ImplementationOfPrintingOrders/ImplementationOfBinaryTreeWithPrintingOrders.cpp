@@ -76,6 +76,38 @@ void printPostOrder(node *root) {
     cout << root->data << " ";
 }
 
+int height(node *root) {
+
+    if (root == NULL) {
+        return 0;
+    }
+    int ls = height(root->left);
+    int rs = height(root->right);
+
+    return max(ls, rs) + 1;
+}
+
+void printKthLevel(node *root, int height) {
+    if (root == NULL) {
+        return;
+    }
+    if (height == 1) {
+        cout << root->data << " ";
+        return;
+    }
+    printKthLevel(root->left, height - 1);
+    printKthLevel(root->right, height - 1);
+    return;
+}
+
+void printAllLevels(node *root) {
+    int h = height(root);
+    for (int i = 1; i <= h; i++) {
+        printKthLevel(root, i);
+        cout << endl;
+    }
+}
+
 int main() {
     node *root = buildTree();
     printPreOrder(root);
@@ -83,6 +115,8 @@ int main() {
     printInOrder(root);
     cout << endl;
     printPostOrder(root);
+    cout << endl;
+    printAllLevels(root);
     return 0;
 }
 
