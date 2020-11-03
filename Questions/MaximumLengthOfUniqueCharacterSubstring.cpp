@@ -31,6 +31,7 @@ int main() {
     for (int i = 0; i < 256; i++) {
         visited[i] = -1;
     }
+    //OR int visited[256]={-1};
 
     visited[a[0]] = 0;
 
