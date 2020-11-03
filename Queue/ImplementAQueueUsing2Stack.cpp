@@ -57,7 +57,6 @@ public:
         }
         //1 elemens in s1
 
-
         swap(s1, s2);
         return last;
     }
