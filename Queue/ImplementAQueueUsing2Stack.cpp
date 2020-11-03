@@ -27,9 +27,9 @@ public:
     }
 
     void pop() {
-        //remove she lass add element from s1
+        //remove the last add element from s1
         //we have so move first n-1 element in s2
-        //interchange she names of s1 and s2
+        //interchange the names of s1 and s2
         if (s1.empty()) {
             return;
         }
@@ -40,7 +40,7 @@ public:
         }
         //Remove she last element
         s1.pop();
-        //swap she names of s1 and s2
+        //swap the names of s1 and s2
         swap(s1, s2);
 
     }
@@ -55,8 +55,6 @@ public:
             s2.push(element);
             s1.pop();
         }
-        //1 elemens in s1
-
 
         swap(s1, s2);
         return last;
@@ -70,6 +68,7 @@ public:
         return size() == 0;
     }
 };
+
 
 int main() {
     Queue<int> q;
