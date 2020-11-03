@@ -50,6 +50,7 @@ void printPreOrder(node *root) {
         return;
     }
     //otherwise print root first followed by subtree(children)
+    //root left right
     cout << root->data << " ";
     printPreOrder(root->left);
     printPreOrder(root->right);
@@ -69,7 +70,7 @@ void printPostOrder(node *root) {
     if (root == NULL) {
         return;
     }
-    //otherwise left root right
+    //otherwise left right root
     printPostOrder(root->left);
     printPostOrder(root->right);
     cout << root->data << " ";
