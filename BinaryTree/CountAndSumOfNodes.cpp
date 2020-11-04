@@ -3,7 +3,7 @@
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 04-Nov-20
 *   Time: 1:58 PM
-*   File: CountAndSumOfNode.cpp
+*   File: CountAndSumOfNodes.cpp
 */
 # include<iostream>
 # include<climits>
