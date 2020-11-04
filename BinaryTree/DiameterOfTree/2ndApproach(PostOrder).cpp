@@ -66,7 +66,6 @@ Pair fastdiameter(node *root) {
     return p;
 }
 
-
 int main() {
     node *root = buildTree();
     Pair p = fastdiameter(root);
