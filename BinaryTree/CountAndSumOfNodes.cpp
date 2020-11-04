@@ -61,7 +61,7 @@ int sum(node *root) {
 
 int main() {
     node *root = buildTree();
-    cout << count(root << endl;;
+    cout << count(root) << endl;;
     cout << sum(root);
 
     return 0;
