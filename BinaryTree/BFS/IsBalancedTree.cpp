@@ -71,7 +71,6 @@ void bfs(node *root) {
         }
     }
     return;
-
 }
 
 class HBPair {
@@ -109,7 +108,6 @@ int main() {
     } else {
         cout << "Not a Balanced Tree";
     }
-
     return 0;
 }
 
