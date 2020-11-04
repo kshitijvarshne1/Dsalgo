@@ -72,7 +72,6 @@ int diameter(node *root) {
 int main() {
     node *root = buildTree();
     cout << diameter(root);
-
     return 0;
 }
 
