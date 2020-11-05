@@ -90,7 +90,7 @@ int search(node *root, int key, int level) {
     return search(root->right, key, level + 1);
 }
 
-//function to find distance between 2 nodes
+//function to find distance between two nodes
 int findDistance(node *root, int a, int b) {
     node *lca_node = lca(root, a, b);
     int l1 = search(lca_node, a, 0);
