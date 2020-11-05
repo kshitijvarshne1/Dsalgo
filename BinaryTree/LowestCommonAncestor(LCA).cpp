@@ -56,7 +56,7 @@ node *levelOrderBuild() {
     return root;
 }
 
-//assumption both a and b are present in the terr and all keys are unique
+//assumption both a and b are present in the given tree and all keys are unique
 node *lca(node *root, int a, int b) {
     if (root == NULL) {
         return NULL;
