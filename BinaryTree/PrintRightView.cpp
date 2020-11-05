@@ -59,12 +59,10 @@ void printRightView(node *root, int level, int &maxlevel) {
     printRightView(root->left, level + 1, maxlevel);
 }
 
-
 int main() {
     node *root = buildTree();
     int maxlevel = -1;
     printRightView(root, 0, maxlevel);
-
     return 0;
 }
 /* Input:-
