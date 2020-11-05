@@ -69,7 +69,6 @@ void printRightView(node *root, int level, int &maxlevel) {
     printRightView(root->left, level + 1, maxlevel);
     //right
     printRightView(root->right, level + 1, maxlevel);
-
 }
 
 int main() {
