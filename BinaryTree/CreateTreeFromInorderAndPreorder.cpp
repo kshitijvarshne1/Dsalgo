@@ -29,7 +29,6 @@ public:
         left = NULL;
         right = NULL;
     }
-
 };
 
 node *createTreeFromTraversal(int *in, int *pre, int s, int e) {
@@ -51,8 +50,6 @@ node *createTreeFromTraversal(int *in, int *pre, int s, int e) {
     root->left = createTreeFromTraversal(in, pre, s, index - 1);
     root->right = createTreeFromTraversal(in, pre, index + 1, e);
     return root;
-
-
 }
 
 void bfs(node *root) {
@@ -81,7 +78,6 @@ void bfs(node *root) {
         }
     }
     return;
-
 }
 
 
@@ -96,11 +92,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> pre[i];
     }
-
     node *root = createTreeFromTraversal(in, pre, 0, n - 1);
     bfs(root);
-
-
     return 0;
 }
 
