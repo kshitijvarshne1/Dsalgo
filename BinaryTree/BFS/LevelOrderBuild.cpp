@@ -29,9 +29,7 @@ public:
         left = NULL;
         right = NULL;
     }
-
 };
-
 node *levelOrderBuild() {
     int d;
     cin >> d;
@@ -82,13 +80,11 @@ node *bfs(node *root) {
         }
     }
     return root;
-
 }
 
 int main() {
     node *root = levelOrderBuild();
     bfs(root);
-
     return 0;
 }
 /* Input:-
