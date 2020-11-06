@@ -105,7 +105,6 @@ LinkedList flatten(node *root) {
     return l;
 }
 
-
 int main() {
     node *root = build();
     // bfs(root);
