@@ -51,7 +51,6 @@ node *build() {
     //Read a list of numbers till -1 and also these numbers will be inserted into BST
     int d;
     cin >> d;
-
     node *root = NULL;
 
     while (d != -1) {
