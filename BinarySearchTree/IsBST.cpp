@@ -101,7 +101,6 @@ void bfs(node *root) {
     return;
 }
 
-
 int main() {
     node *root = build();
     // bfs(root);
