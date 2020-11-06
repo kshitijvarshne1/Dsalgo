@@ -31,7 +31,6 @@ public:
     }
 
 };
-
 //Accept the old root & data and returns the new root node
 node *insertInBST(node *root, int data) {
     //Base Case
