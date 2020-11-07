@@ -17,8 +17,30 @@
 # include<queue>
 
 using namespace std;
+//Sort the K sorted array
 
 int main() {
-    return 0;
-}
+    priority_queue<int, vector<int>, greater<int>> pq; //By default priority_queue like as maxHeap //for minHeap we use  priority_queue<int,vector<int>,greater<int>>pq;
+    vector<int> final;
+    int n;
+    cin >> n;
+    int k;
+    cin >> k;
+    for (int i = 0; i < n; i++) {
+        int x;
+        cin >> x;
+        pq.push(x);
+        if (pq.size() > k) {
+            final.push_back(pq.top());
+            pq.pop();
+        }
+    }
+    while (!pq.empty()) {
+        final.push_back(pq.top());
+        pq.pop();
+    }
+    for (auto i = final.begin(); i != final.end(); i++) {
+        cout << *i << " ";
+    }
 
+}
