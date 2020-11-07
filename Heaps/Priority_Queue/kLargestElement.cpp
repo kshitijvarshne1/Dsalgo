@@ -17,8 +17,26 @@
 # include<queue>
 
 using namespace std;
+//find k largest element from the array
 
 int main() {
-    return 0;
-}
+    priority_queue<int, vector<int>, greater<int>> pq; //By default priority_queue like as maxHeap //for minHeap we use  priority_queue<int,vector<int>,greater<int>>pq;
+    int n;
+    cin >> n;
+    int k;
+    cin >> k;
+    for (int i = 0; i < n; i++) {
+        int x;
+        cin >> x;
+        pq.push(x);
+        if (pq.size() > k) {
+            pq.pop();
+        }
+    }
+    while (!pq.empty()) {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
 
+
+}
