@@ -29,7 +29,6 @@ public:
         left = NULL;
         right = NULL;
     }
-
 };
 
 node *levelOrderBuild() {
