@@ -31,7 +31,6 @@ void buildHeapOptimised(vector<int> &v) {
     }
 }
 
-
 int main() {
     vector<int> v{10, 20, 5, 6, 1, 8, 9, 4};
     buildHeapOptimised(v);
