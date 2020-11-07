@@ -47,7 +47,6 @@ void buildHeapUsingIndexEqualto1(vector<int> &v) {
 Input:- -1,10,20,5,6,1,8,9,4
 Output:- -1 20 10 9 6 1 5 8 4
 */
-
 int main() {
     vector<int> v{10, 20, 5, 6, 1, 8, 9, 4};
     buildHeap(v);
