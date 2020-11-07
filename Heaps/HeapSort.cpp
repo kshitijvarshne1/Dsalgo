@@ -16,7 +16,7 @@
 # include<stack>
 # include<queue>
 
-using namespace std
+using namespace std;
 
 bool minHeap = false;
 
