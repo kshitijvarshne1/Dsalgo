@@ -37,6 +37,4 @@ int main() {
         cout << pq.top() << " ";
         pq.pop();
     }
-
-
 }
