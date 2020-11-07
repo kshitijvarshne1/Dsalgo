@@ -17,8 +17,8 @@
 # include<queue>
 
 using namespace std;
-bool minHeap = false;
 
+bool minHeap = false;
 bool compare(int a, int b) {
     if (minHeap) {
         return a < b;
