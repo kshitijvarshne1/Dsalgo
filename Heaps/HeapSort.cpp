@@ -17,8 +17,17 @@
 # include<queue>
 
 using namespace std;
+bool minHeap = false;
 
-int main() {
-    return 0;
+bool compare(int a, int b) {
+    if (minHeap) {
+        return a < b;
+    } else {
+        return a > b;
+    }
 }
+
+void heapify(vector<int> &v, int idx, int size) {
+    int left = 2 * idx;
+    int right = left + 1;
 
