@@ -68,7 +68,6 @@ void printright(node *rootNode) {
         return;
     cout << rootNode->data << " ";
     printright(rootNode->right);
-
 }
 
 void printTopView(node *root) {
@@ -79,9 +78,7 @@ void printTopView(node *root) {
     printLeft(rootNode->left);
     cout << rootNode->data << " ";
     printright(rootNode->right);
-
 }
-
 
 int main() {
     node *root = levelOrderBuild();
