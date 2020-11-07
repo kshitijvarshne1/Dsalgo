@@ -42,5 +42,4 @@ int main() {
     for (auto i = final.begin(); i != final.end(); i++) {
         cout << *i << " ";
     }
-
 }
