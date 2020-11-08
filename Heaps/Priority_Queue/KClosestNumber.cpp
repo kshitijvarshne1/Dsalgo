@@ -18,7 +18,6 @@ c/*
 
 using namespace std;
 //k Closest Numbers
-
 int main() {
     priority_queue<pair<int, int>> pq; //By default priority_queue like as maxHeap //for minHeap we use  priority_queue<int,vector<int>,greater<int>>pq;
     pair<int, int> temp;
