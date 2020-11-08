@@ -15,13 +15,12 @@
 # include<vector>
 # include<stack>
 # include<queue>
-
 //Top k frequent numbers
 using namespace std;
 
 void kFrequentNum(priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq, int arr[], int n,
                   int k) {
-    unordered_map<int, int> mp;
+    unordered_map<int, int> mp;//use to count frequency //hash table
 
     for (int i = 0; i < n; i++)
         mp[arr[i]]++;
@@ -36,8 +35,6 @@ void kFrequentNum(priority_queue<pair<int, int>, vector<pair<int, int>>, greater
         cout << pq.top().second << " ";
         pq.pop();
     }
-
-
 }
 
 int main() {
