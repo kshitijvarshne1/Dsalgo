@@ -16,10 +16,8 @@
 # include<stack>
 # include<queue>
 
-
 //Join the ropes
 using namespace std;
-
 int joinTheRopes(priority_queue<int, vector<int>, greater<int>> pq) {
     int cost = 0;
     while (pq.size() > 1) {
@@ -33,7 +31,6 @@ int joinTheRopes(priority_queue<int, vector<int>, greater<int>> pq) {
     }
     return cost;
 }
-
 
 int main() {
     priority_queue<int, vector<int>, greater<int>> pq;   //minHeap
