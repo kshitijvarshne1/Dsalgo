@@ -17,6 +17,7 @@
 # include<queue>
 
 using namespace std;
+
 //find kth closest to origin
 void kthClosestToOrigin(int a[100][100], int n, int k) {
     priority_queue<pair<int, pair<int, int>>> pq;
