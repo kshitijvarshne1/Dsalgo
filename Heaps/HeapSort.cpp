@@ -58,7 +58,7 @@ void heapSort(vector<int> &v) {
 
     while (n > 1) {
         swap(v[1], v[n - 1]);
-        //shrint the size
+        //shrink the size
         n--;
         heapify(v, 1, n);
     }
