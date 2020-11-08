@@ -1,4 +1,4 @@
-c/*
+/*
 *   Created by CLion IDE.
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 08-Nov-20
