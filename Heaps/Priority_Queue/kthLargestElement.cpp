@@ -18,7 +18,28 @@
 
 using namespace std;
 
-int main() {
-    return 0;
+//find kth largest smallest element from the array
+int kthlargestElement(int a[], int n, int k) {
+    priority_queue<int, vector<int>, greater<int>> pq; //minHeap
+    for (int i = 0; i < n; i++) {
+        pq.push(a[i]);
+        if (pq.size() > k) {
+            pq.pop();
+        }
+    }
+    return pq.top();
 }
 
+
+int main() {
+
+    int n;
+    cin >> n;
+    int k;
+    cin >> k;
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    cout << kthlargestElement(a, n, k);
+}
