@@ -68,7 +68,6 @@ void verticalOrderPrint(node *root, int d, map<int, vector<int>> &m) {
     return;
 }
 
-
 int main() {
     int n;
     cin >> n;
@@ -83,7 +82,6 @@ int main() {
         }
         cout << endl;
     }
-
     return 0;
 }
 /*Input:-
