@@ -49,8 +49,6 @@ int main() {
         cin >> a[i];
     }
     cout << lengthOfLongestSubarrayKSum(a, n, k);
-
-
     return 0;
 }
 
