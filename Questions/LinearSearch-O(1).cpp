@@ -22,6 +22,32 @@
 using namespace std;
 
 int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        unordered_set<int> m;
+        for (int i = 0; i < n; i++) {
+            int k;
+            cin >> k;
+            m.insert(k);
+        }
+        int q;
+        cin >> q;
+        while (q--) {
+            int x;
+            cin >> x;
+            if (m.find(x) != m.end()) {
+                cout << "Yes" << endl;
+
+            } else {
+                cout << "No" << endl;
+            }
+        }
+    }
     return 0;
+
+
 }
 
