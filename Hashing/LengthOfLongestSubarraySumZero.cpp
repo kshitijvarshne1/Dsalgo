@@ -48,8 +48,6 @@ int main() {
         cin >> a[i];
     }
     cout << lengthOfLongestSubarraySumOfZero(a, n);
-
-
     return 0;
 }
 
