@@ -45,7 +45,6 @@ int findLongestSequenceOfConsecutiveNumbers(int a[], int n) {
     return max_streak;
 }
 
-
 int main() {
     int n;
     cin >> n;
