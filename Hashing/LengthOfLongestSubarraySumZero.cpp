@@ -21,7 +21,35 @@
 
 using namespace std;
 
+int lengthOfLongestSubarraySumOfZero(int a[], int n) {
+    unordered_map<int, int> m;
+    int prefixSum = 0;
+    int len = 0;
+    for (int i = 0; i < n; i++) {
+        prefixSum += a[i];
+        if (prefixSum == 0) {
+            len = max(len, i + 1);
+        }
+        if (m.find(prefixSum) != m.end()) {
+            len = max(len, i - m[prefixSum]);
+        } else {
+            //store the first occurence
+            m[prefixSum] = i;
+        }
+    }
+    return len;
+}
+
 int main() {
+    int n;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    cout << lengthOfLongestSubarraySumOfZero(a, n);
+
+
     return 0;
 }
 
