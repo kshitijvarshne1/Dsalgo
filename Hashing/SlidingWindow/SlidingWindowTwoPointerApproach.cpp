@@ -64,6 +64,5 @@ int main() {
     } else {
         cout << s.substr(resl, resr - resl + 1);
     }
-
     return 0;
 }
