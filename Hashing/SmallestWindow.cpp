@@ -74,8 +74,9 @@ string find_window(string s, string p) {
 }
 
 int main() {
-    string s, p;
-    cin >> s;
+    char s[10000];
+    cin.getline(s, 10000);
+    string p;
     cin >> p;
     cout << find_window(s, p);
     return 0;
