@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 string find_window(string s, string p) {
     int SL = s.length();
     int PL = p.length();
@@ -77,7 +78,5 @@ int main() {
     cin >> s;
     cin >> p;
     cout << find_window(s, p);
-
-
     return 0;
 }
