@@ -53,6 +53,5 @@ int main() {
     for (int i = 0; i < c; i++) {
         cout << newArr[i] << " ";
     }
-
     return 0;
 }
