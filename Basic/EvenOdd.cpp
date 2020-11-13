@@ -42,4 +42,5 @@ int main() {
     } else {
         cout << "It is a even number";
     }
+    return 0;
 }
