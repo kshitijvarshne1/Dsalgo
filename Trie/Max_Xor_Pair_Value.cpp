@@ -106,6 +106,12 @@ int main() {
     }
     trie t;
     cout << t.max_xor(a, n) << endl;
-
     return 0;
 }
+/*
+Input:-
+6
+3 10 5 25 2 8
+Output:-
+5^25=28
+ */
