@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 int make_change(int *coins, int n, int money) {
     int ans = 0;
     while (money > 0) {
@@ -39,6 +40,5 @@ int main() {
     int totalCoins = make_change(coins, t, money);
     cout << endl;
     cout << "Total coins is " << totalCoins;
-
     return 0;
 }
