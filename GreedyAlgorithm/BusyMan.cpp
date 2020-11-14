@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 bool compare(pair<int, int> p1, pair<int, int> p2) {
     return p1.second < p2.second;
 }
@@ -51,6 +52,5 @@ int main() {
         }
         cout << result << endl;
     }
-
     return 0;
 }
