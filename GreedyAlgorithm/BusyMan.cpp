@@ -20,8 +20,37 @@
 # include<unordered_set>
 
 using namespace std;
-
-int main() {
-    return 0;
+bool compare(pair<int, int> p1, pair<int, int> p2) {
+    return p1.second < p2.second;
 }
 
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<pair<int, int>> v;
+        int s, e;
+        for (int i = 0; i < n; i++) {
+            cin >> s >> e;
+            v.push_back(make_pair(s, e));
+        }
+        //Activity selection algorithm
+        //Sort
+        sort(v.begin(), v.end(), compare);
+        //start picking activities
+        int result = 1;
+        int recentActivity = v[0].second;
+        //iterate over remaining activities
+        for (int i = 1; i < n; i++) {
+            if (v[i].first >= recentActivity) {
+                recentActivity = v[i].second;
+                result++;
+            }
+        }
+        cout << result << endl;
+    }
+
+    return 0;
+}
