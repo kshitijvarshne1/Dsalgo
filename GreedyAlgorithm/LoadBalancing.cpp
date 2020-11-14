@@ -38,33 +38,39 @@
 # include<map>
 # include<unordered_map>
 # include<unordered_set>
-//Defense of a kingdom
+
 using namespace std;
 
+//Load Balancing
 int main() {
-    int n;
-    cin >> n;
-    int width = 15, height = 8;
-    int x[n], y[n];
-    for (int i = 0; i < n; i++) {
-        cin >> x[i] >> y[i];
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int a[n];
+        int load = 0, diff = 0, max_load = 0;
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+            load += a[i];
+        }
+        if (load % n != 0) {
+            cout << "-1";
+        } else {
+            //find the load that is to be divided equally
+            load = load / n;
+            //greedy step
+            for (int i = 0; i < n; i++) {
+                //find the difference between final load to be assigned and current load
+                diff += a[i] - load;
+                int ans = abs(diff);
+                max_load = max(max_load, ans);
+            }
+            cout << max_load;
+
+        }
+
     }
-    //sorting
-    sort(x, x + n);
-    sort(y, y + n);
-//    int dx=0;
-//    int dy=0;
-    int dx = x[0];
-    int dy = y[0];
-    for (int i = 1; i < n; i++) {
-        dx = max(dx, x[i] - x[i - 1]);
-        dy = max(dy, y[i] - y[i - 1]);
-    }
-    //corner case
-    // dx=max(dx,width-x[n-1]);
-    // dy=max(dy,height-y[n-1]);
-    // cout<<dx*dy;
-    cout << (dx - 1) * (dy - 1);
+
     return 0;
 }
-
