@@ -21,7 +21,24 @@
 
 using namespace std;
 
+
 int main() {
+    int n;
+    cin >> n;
+    int whiteDotPossitionArray[n];
+    int blackDotPossitionArray[n];
+    for (int i = 0; i < n; i++) {
+        cin >> whiteDotPossitionArray[i];
+    }
+    for (int i = 0; i < n; i++) {
+        cin >> blackDotPossitionArray[i];
+    }
+    sort(whiteDotPossitionArray, whiteDotPossitionArray + n);
+    sort(blackDotPossitionArray, blackDotPossitionArray + n);
+    int minLength = 0;
+    for (int i = 0; i < n; i++) {
+        minLength += abs(whiteDotPossitionArray[i] - blackDotPossitionArray[i]);
+    }
+    cout << "Minmum length of wire required to connect the dots:- " << minLength;
     return 0;
 }
-
