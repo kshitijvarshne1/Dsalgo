@@ -46,7 +46,6 @@ int main() {
     // dy=max(dy,height-y[n-1]);
     // cout<<dx*dy;
     cout << (dx - 1) * (dy - 1);
-
     return 0;
 }
 
