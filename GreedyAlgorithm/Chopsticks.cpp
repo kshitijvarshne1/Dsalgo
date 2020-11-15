@@ -20,8 +20,28 @@
 # include<unordered_set>
 
 using namespace std;
-
+//Chopsticks
 int main() {
+    int n, d;
+    cin >> n;
+    cin >> d;
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    sort(a, a + n);
+    int c = 0;
+    int i = 0;
+    n = n - 1;
+    while (n--) {
+        if (a[i + 1] - a[i] >= d) {
+            c++;
+            i = i + 2;
+        } else {
+            i = i + 1;
+        }
+    }
+    cout << "No of chopsticks made:- " << c;
+
     return 0;
 }
-
