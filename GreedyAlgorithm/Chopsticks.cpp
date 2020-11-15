@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 //Chopsticks
 int main() {
     int n, d;
@@ -42,6 +43,5 @@ int main() {
         }
     }
     cout << "No of chopsticks made:- " << c;
-
     return 0;
 }
