@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 class Graph {
     int v;
     //Array of list
@@ -55,6 +56,5 @@ int main() {
     g.addEdge(2, 3);
     g.addEdge(1, 2);
     g.printAdjacencyList();
-
     return 0;
 }
