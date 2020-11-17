@@ -3,7 +3,7 @@
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 17-Nov-20
 *   Time: 2:38 PM
-*   File: AdjacentImplementationFromGenericData.cpp
+*   File: AdjacentImplementationForGenericData.cpp
 */
 # include<iostream>
 # include<climits>
@@ -53,7 +53,6 @@ int main() {
     g.addEdge("C", "D", true, 40);
     g.addEdge("A", "D", false, 50);
     g.printAdjacencyList();
-
     return 0;
 }
 
