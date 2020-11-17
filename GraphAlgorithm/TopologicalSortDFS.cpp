@@ -75,7 +75,6 @@ int main() {
     g.addEdge("DL", "Face Recogn");
     g.addEdge("Data Set", "Face Recogn");
     g.dfs();
-
     return 0;
 }
 
