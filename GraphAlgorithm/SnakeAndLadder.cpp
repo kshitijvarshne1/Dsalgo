@@ -93,7 +93,6 @@ int main() {
     }
     g.addEdge(36, 36);
     cout << g.bfs(0, 36);
-
     return 0;
 }
 
