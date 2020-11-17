@@ -124,7 +124,21 @@ int main() {
         g.addEdge(n, n);
         cout << g.bfs(0, n);
     }
-
     return 0;
 }
+/*
+Input:-
+1
+30 4 4
+3 22
+5 8
+11 26
+20 29
+17 4
+19 7
+21 9
+27 1
 
+Output:-
+3
+*/
