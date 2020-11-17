@@ -43,7 +43,7 @@ public:
         return;
     }
 
-    void dfs(T src) {
+    void dfs() {
         map<T, bool> visited;
         //mark all the nodes as not visited in the beginning
         for (auto p:l) {
@@ -76,7 +76,7 @@ int main() {
     g.addEdge(6, 7);
 
     g.addEdge(8, 8);
-    g.dfs(0);
+    g.dfs();
 
     return 0;
 }
