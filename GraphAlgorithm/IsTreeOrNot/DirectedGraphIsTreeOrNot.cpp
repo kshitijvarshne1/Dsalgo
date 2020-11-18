@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 class Graph {
     list<int> *l;
     int v;
@@ -69,6 +70,7 @@ public:
         return cycle_helper(0, visited, stack);
     }
 };
+
 int main() {
     Graph g(7);
     g.addEdge(0, 1);
@@ -84,7 +86,6 @@ int main() {
     } else {
         cout << "No";
     }
-
     return 0;
 }
 
