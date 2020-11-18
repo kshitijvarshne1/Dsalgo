@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+
 class Graph {
     list<int> *l;
     int v;
@@ -70,6 +71,7 @@ public:
         }
     }
 };
+
 int main() {
     Graph g(6);
     g.addEdge(0, 2);
@@ -81,7 +83,6 @@ int main() {
     g.addEdge(2, 5);
 
     g.topologicalSort();
-
     return 0;
 }
 
