@@ -98,6 +98,5 @@ int main() {
     } else {
         cout << "No";
     }
-
     return 0;
 }
