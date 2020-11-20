@@ -100,6 +100,5 @@ int main() {
     g.addEdge(3, 4, 2);
     g.addEdge(1, 4, 7);
     g.dijsktraSSSPA(1);
-
     return 0;
 }
