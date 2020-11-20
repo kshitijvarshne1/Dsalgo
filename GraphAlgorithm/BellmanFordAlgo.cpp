@@ -36,7 +36,6 @@ vector<int> bellmanFordAlgo(int v, int src, vector<vector<int>> edges) {
             }
         }
     }
-
     //negative weight cycle
     for (auto edge:edges) {
         int u = edge[0];
@@ -49,7 +48,6 @@ vector<int> bellmanFordAlgo(int v, int src, vector<vector<int>> edges) {
     }
     return distance;
 }
-
 
 int main() {
     int v, e;
@@ -66,6 +64,5 @@ int main() {
     for (int i = 1; i <= v; i++) {
         cout << "Node " << i << " is at a distance " << distance[i] << endl;
     }
-
     return 0;
 }
