@@ -105,7 +105,6 @@ int main() {
     g.addEdge(0, 3, 2);
     g.addEdge(1, 2, 2);
     cout << g.kruksal_mst();
-
     return 0;
 }
 
