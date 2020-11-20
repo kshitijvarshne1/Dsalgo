@@ -95,7 +95,6 @@ int main() {
         g.addEdge(x, y);
     }
     cout << g.pairing();
-
     return 0;
 }
 
