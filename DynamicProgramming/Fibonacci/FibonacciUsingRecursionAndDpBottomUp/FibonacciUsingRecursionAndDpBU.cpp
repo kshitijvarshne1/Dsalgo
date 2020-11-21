@@ -20,7 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
-//nth fibonacci number using recursion and DP->O(n)
+//nth fibonacci number using recursion and DP Time->O(n) spcace ->o(n)
 //Bottom up approach
 int nthFib(int n) {
     int dp[10000] = {0};
