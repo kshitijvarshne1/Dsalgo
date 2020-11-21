@@ -50,6 +50,5 @@ int main() {
     cin >> n;
     int dp[10000] = {0};
     cout << minSteps(n, dp);
-
     return 0;
 }
