@@ -20,8 +20,22 @@
 # include<unordered_set>
 
 using namespace std;
+//nth fibonacci number using recursion and DP->O(n)
+//Bottom up approach
+int nthFib(int n) {
+    int dp[10000] = {0};
+    dp[1] = 1;
 
-int main() {
-    return 0;
+    for (int i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    return dp[n];
 }
 
+int main() {
+    int n;
+    cin >> n;
+    cout << nthFib(n);
+
+    return 0;
+}
