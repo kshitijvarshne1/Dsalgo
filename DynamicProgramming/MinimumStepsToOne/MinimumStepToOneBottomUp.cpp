@@ -47,6 +47,5 @@ int main() {
     int n;
     cin >> n;
     cout << minSteps(n);
-
     return 0;
 }
