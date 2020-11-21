@@ -40,6 +40,5 @@ int main() {
     cin >> n;
     int dp[10000] = {0};
     cout << nthFib(n, dp);
-
     return 0;
 }
