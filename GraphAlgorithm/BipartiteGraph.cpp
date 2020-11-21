@@ -42,7 +42,6 @@ bool dfs_helper(vector<int> graph[], int node, int *visited, int parent, int col
     return true;
 }
 
-
 bool dfs(vector<int> graph[], int n) {
 
     int visited[1000] = {0};  // 0- Not Visited, 1 - Visited Color is 1, 2 - Visted Color 2
@@ -56,7 +55,6 @@ bool dfs(vector<int> graph[], int n) {
         cout << i << " - Color " << visited[i] << endl;
     }
 
-    //
     return ans;
 }
 
