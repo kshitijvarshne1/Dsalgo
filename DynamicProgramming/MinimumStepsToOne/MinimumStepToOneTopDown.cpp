@@ -24,6 +24,7 @@ using namespace std;
 //n->n/2
 //n->n/3
 //n=n-1
+//TopDown approach
 
 int minSteps(int n, int dp[]) {
     if (n == 1) {
