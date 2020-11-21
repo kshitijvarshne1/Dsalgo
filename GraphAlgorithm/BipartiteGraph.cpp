@@ -77,7 +77,6 @@ int main() {
     } else {
         cout << "Not Bipartite";
     }
-
     return 0;
 }
 
