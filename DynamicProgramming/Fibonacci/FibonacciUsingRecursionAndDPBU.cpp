@@ -36,6 +36,5 @@ int main() {
     int n;
     cin >> n;
     cout << nthFib(n);
-
     return 0;
 }
