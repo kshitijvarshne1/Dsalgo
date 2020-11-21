@@ -20,8 +20,18 @@
 # include<unordered_set>
 
 using namespace std;
-
-int main() {
-    return 0;
+int nthFib(int n) {
+    //Base case
+    if (n == 0 or n == 1) {
+        return n;
+    }
+    int ans;
+    ans = nthFib(n - 1) + nthFib(n - 2);
+    return ans;
 }
 
+int main() {
+    cout << nthFib(6);
+
+    return 0;
+}
