@@ -41,6 +41,5 @@ int main() {
     int coins[] = {1, 7, 10};
     int t = sizeof(coins) / sizeof(int);
     cout << minCoins(n, coins, t);
-
     return 0;
 }
