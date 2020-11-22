@@ -20,6 +20,7 @@
 # include<unordered_set>
 
 using namespace std;
+//Using Dp->Bottom up
 int maxSum(int a[], int n) {
     int dp[100] = {0};
     dp[0] = a[0] > 0 ? a[0] : 0;
