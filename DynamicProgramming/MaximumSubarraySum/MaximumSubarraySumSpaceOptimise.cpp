@@ -39,6 +39,5 @@ int main() {
     int a[] = {-3, 2, 5, -1, 6, 3, -2, 7, -5, 2};
     int n = sizeof(a) / sizeof(int);
     cout << maxSum(a, n);
-
     return 0;
 }
