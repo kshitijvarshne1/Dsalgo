@@ -37,7 +37,6 @@ int main() {
     int dp[100][100] = {0};
     int year = 1;
     cout << profit(wines, 0, n - 1, year, dp);
-
     return 0;
 }
 
