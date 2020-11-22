@@ -42,6 +42,5 @@ int main() {
     cin >> n >> k;
     int dp[1000] = {0};
     cout << ladders_topdown(n, k, dp);
-
     return 0;
 }
