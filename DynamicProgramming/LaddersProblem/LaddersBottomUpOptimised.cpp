@@ -19,6 +19,7 @@
 # include<unordered_map>
 # include<unordered_set>
 using namespace std;
+
 int ladders_bottomUp(int n, int k) {
     int dp[100] = {0};
     dp[0] = dp[1] = 1;
@@ -35,6 +36,5 @@ int main() {
     int n, k;
     cin >> n >> k;
     cout << ladders_bottomUp(n, k);
-
     return 0;
 }
