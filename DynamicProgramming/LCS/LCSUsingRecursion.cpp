@@ -33,11 +33,9 @@ int lcs(string s1, string s2, int i, int j) {
     return max(op1, op2);
 }
 
-
 int main() {
     string s1, s2;
     cin >> s1 >> s2;
     cout << lcs(s1, s2, 0, 0);
-
     return 0;
 }
