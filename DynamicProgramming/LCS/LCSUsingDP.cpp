@@ -37,7 +37,6 @@ int lcs(string s1, string s2, int i, int j, vector<vector<int>> &dp) {
     return dp[i][j] = max(op1, op2);
 }
 
-
 int main() {
     string s1, s2;
     cin >> s1 >> s2;
@@ -45,6 +44,5 @@ int main() {
     int n2 = s2.length();
     vector<vector<int>> dp(n1, vector<int>(n2, -1));
     cout << lcs(s1, s2, 0, 0, dp);
-
     return 0;
 }
