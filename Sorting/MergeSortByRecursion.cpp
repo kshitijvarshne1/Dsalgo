@@ -1,4 +1,4 @@
-/*  
+/*
 *   Created by CLion IDE.
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 25-Oct-20
@@ -22,7 +22,7 @@ void merge(int *a, int s, int e) {
     int k = s;
     int temp[1000];
     while (i <= mid && j <= e) {
-        ̥if (a[i] < a[j]) {
+        if (a[i] < a[j]) {
             temp[k++] = a[i++];
         } else {
             temp[k++] = a[j++];
