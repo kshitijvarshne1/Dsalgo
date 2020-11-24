@@ -18,7 +18,9 @@
 # include<map>
 # include<unordered_map>
 # include<unordered_set>
+
 using namespace std;
+
 int minCost(int cost[][100], int r, int c, int dp[100][100]) {
     for (int i = 0; i < r; i++) {
         for (int j = 0; j < c; j++) {
@@ -48,6 +50,5 @@ int main() {
     int dp[100][100] = {0};
     cout << minCost(cost, r, c, dp);
     cout << endl;
-
     return 0;
 }
