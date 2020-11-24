@@ -37,6 +37,5 @@ int main() {
     int n;
     cin >> n;
     cout << countFriendsPairings(n);
-
     return 0;
 }
