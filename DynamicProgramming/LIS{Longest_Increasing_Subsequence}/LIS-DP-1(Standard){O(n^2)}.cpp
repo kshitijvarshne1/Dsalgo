@@ -42,6 +42,5 @@ int main() {
         lis = max(lis, dp[i]);
     }
     cout << lis;
-
     return 0;
 }
