@@ -18,9 +18,7 @@
 # include<map>
 # include<unordered_map>
 # include<unordered_set>
-
 using namespace std;
-
 int main() {
     int n;
     cin >> n;
@@ -37,7 +35,7 @@ int main() {
 
     for (int i = 0; i <= n; i++) {
         int length = upper_bound(dp, dp + n + 1, a[i]) - dp;
-        if (dp[length - 1] < a[i] && dp[length]) {
+        if (dp[length - 1] < a[i] && a[i] < dp[length]) {
             dp[length] = a[i];
         }
     }
