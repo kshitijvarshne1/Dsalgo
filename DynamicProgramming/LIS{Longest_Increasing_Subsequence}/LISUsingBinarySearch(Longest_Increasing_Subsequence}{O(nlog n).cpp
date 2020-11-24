@@ -48,7 +48,5 @@ int main() {
         }
     }
     cout << lis;
-
-
     return 0;
 }
