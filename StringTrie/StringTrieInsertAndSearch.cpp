@@ -25,7 +25,6 @@ using namespace std;
 struct trie {
     trie *nxt[26];
     bool ended;
-
     trie() {
         for (int i = 0; i < 26; i++) {
             nxt[i] = NULL;
