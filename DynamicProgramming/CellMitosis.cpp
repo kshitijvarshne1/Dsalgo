@@ -40,5 +40,5 @@ int main() {
     int n, x, y, z;
     cin >> n >> x >> y >> z;
     cout << solveCellProblem(n, x, y, z);
-
+    return 0;
 }
