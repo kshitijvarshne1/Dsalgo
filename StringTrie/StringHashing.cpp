@@ -43,6 +43,5 @@ int main() {
 
     string text = "abababab", pat = "aba";
     cout << poly_hash_string(text);
-
     return 0;
 }
