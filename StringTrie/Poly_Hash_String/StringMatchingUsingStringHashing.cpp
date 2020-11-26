@@ -36,20 +36,15 @@ ll poly_hash_string(string s) {
     }
     return hash;
 }
-
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
     */
-
     string text = "ababab", pat = "aba";
     int pat_hash = poly_hash_string(pat);
     int n = text.size(), m = pat.size();
-    int text_hash = poly_hash_string(text.substr(0, m));
-    if (text_hash == pat_hash) {
-        cout << "YES AT 0 " << endl;
-    }
-    for (int i = 1; i + m <= n; i++) {
+
+    for (int i = 0; i + m <= n; i++) {
         int new_hash = poly_hash_string(text.substr(i, m));
         if (new_hash == pat_hash) {
             cout << "YES at " << i << endl;
