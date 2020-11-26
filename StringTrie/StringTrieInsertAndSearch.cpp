@@ -62,7 +62,7 @@ int main() {
     cin.tie(NULL);cout.tie(NULL);
     */
     root = new trie();
-    insert("apar");
+    insert("aapar");
     insert("aryan");
     insert("shivam");
 
