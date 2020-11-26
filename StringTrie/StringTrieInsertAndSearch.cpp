@@ -58,7 +58,6 @@ bool in_trie(string s) {
     return current->ended;
 }
 
-
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
@@ -73,7 +72,6 @@ int main() {
     } else {
         cout << "Not found";
     }
-
     return 0;
 }
 
