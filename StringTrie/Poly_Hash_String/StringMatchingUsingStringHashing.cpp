@@ -20,7 +20,7 @@
 # include<unordered_set>
 
 # define ll long long int
-# define mod 10000000007
+# define modValue 1e9 + 7
 const ll mod = 1e9 + 7;
 const ll p = 31;
 using namespace std;
