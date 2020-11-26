@@ -82,7 +82,6 @@ int main() {
             cout << "Yes at " << i << endl;
         }
     }
-
     return 0;
 }
 
