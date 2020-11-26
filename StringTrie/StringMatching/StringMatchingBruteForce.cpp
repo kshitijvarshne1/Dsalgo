@@ -42,7 +42,6 @@ int main() {
     int m = txt.size();
     int n = pattern.size();
     matching(txt, pattern, m, n);
-
     return 0;
 }
 
