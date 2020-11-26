@@ -23,7 +23,7 @@
 const ll mod = 1e9 + 7;
 const ll p = 31;
 using namespace std;
-
+//Rabin karp algorithm
 ll poly_hash_string(string s) {
     ll p_power = 1;
     ll hash = 0;
