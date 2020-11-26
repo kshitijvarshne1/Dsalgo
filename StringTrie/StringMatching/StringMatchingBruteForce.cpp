@@ -22,10 +22,26 @@
 # define mod 10000000007
 using namespace std;
 
+void matching(string txt, string pattern, int m, int n) {
+    int c = 1;
+    for (int i = 0; i < m; i++) {
+        if (txt.substr(i, n) == pattern) {
+            cout << " YES " << endl;
+            cout << " from the index " << i;
+            c == 0;
+        }
+    }
+    if (c) {
+        cout << "No";
+    }
+}
+
 int main() {
-    /*ios_base::sync_with_stdio(false);
-    cin.tie(NULL);cout.tie(NULL);
-    */
+    string txt = "abaacadabacad";
+    string pattern = "aaca";
+    int m = txt.size();
+    int n = pattern.size();
+    matching(txt, pattern, m, n);
 
     return 0;
 }
