@@ -36,7 +36,6 @@ int maxSumOfSubmatrices(int a[][100], int m, int n) {
         }
     }
 
-
     int result = INT_MIN;
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
@@ -45,7 +44,6 @@ int maxSumOfSubmatrices(int a[][100], int m, int n) {
     }
     return result;
 }
-
 
 int main() {
     /*ios_base::sync_with_stdio(false);
@@ -60,6 +58,5 @@ int main() {
         }
     }
     cout << maxSumOfSubmatrices(a, m, n);
-
     return 0;
 }
