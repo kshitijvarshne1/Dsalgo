@@ -22,11 +22,32 @@
 # define modValue 1e9 + 7
 using namespace std;
 
+int sumOfSubmatrices(int a[][100], int m, int n) {
+    int sum = 0;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            int tl = (i + 1) * (j + 1);
+            int br = (m - i) * (n - j);
+            sum += a[i][j] * tl * br;
+        }
+    }
+    return sum;
+}
+
+
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
     */
+    int m, n;
+    cin >> m >> n;
+    int a[100][100];
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> a[i][j];
+        }
+    }
+    cout << sumOfSubmatrices(a, m, n);
 
     return 0;
 }
-
