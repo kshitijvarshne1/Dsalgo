@@ -34,7 +34,6 @@ int sumOfSubmatrices(int a[][100], int m, int n) {
     return sum;
 }
 
-
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
@@ -48,6 +47,5 @@ int main() {
         }
     }
     cout << sumOfSubmatrices(a, m, n);
-
     return 0;
 }
