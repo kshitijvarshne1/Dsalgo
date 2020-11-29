@@ -51,7 +51,6 @@ bool isPrime(ll no) {
     return true;
 }
 
-
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
@@ -67,8 +66,6 @@ int main() {
     } else {
         cout << "No";
     }
-
-
     return 0;
 }
 
