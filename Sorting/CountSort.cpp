@@ -43,7 +43,6 @@ void countSort(int a[], int n) {
     for (int i = 0; i < n; ++i) {
         cout << output[i] << " ";
     }
-
 }
 
 int main() {
