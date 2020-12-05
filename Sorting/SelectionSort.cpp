@@ -23,11 +23,29 @@
 # define ll long long int
 using namespace std;
 
-int main() {
-    /*ios_base::sync_with_stdio(false);
-    cin.tie(NULL);cout.tie(NULL);
-    */
-
-    return 0;
+void selection_sort(int a[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (a[j] < a[minIndex]) {
+                minIndex = j;
+            }
+        }
+        swap(a[i], a[minIndex]);
+    }
+    return;
 }
 
+int main() {
+    int n;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    selection_sort(a, n);
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << " ";
+    }
+    return 0;
+}
