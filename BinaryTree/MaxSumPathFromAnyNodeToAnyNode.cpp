@@ -34,7 +34,6 @@ public:
         left = NULL;
         right = NULL;
     }
-
 };
 
 node *levelOrderBuild() {
@@ -91,14 +90,12 @@ Pair maxSumPath(node *root) {
     p.maxSum = max(left.maxSum, max(right.maxSum, current_ans_through_root));
 
     return p;
-
 }
 
 
 int main() {
     node *root = levelOrderBuild();
     cout << maxSumPath(root).maxSum;
-
     return 0;
 }
 
