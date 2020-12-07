@@ -61,7 +61,6 @@ int main() {
     CST(0, n - 1, 0, arr, tree);
 
     cout << getSumRec(0, 2, 0, 3, 0, tree);
-
     return 0;
 }
 
