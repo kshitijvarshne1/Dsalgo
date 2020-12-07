@@ -62,6 +62,5 @@ int main() {
     CST(0, n - 1, 0, arr, tree);
 
     updateRec(0, 3, 1, 0, 5, tree);
-
     return 0;
 }
