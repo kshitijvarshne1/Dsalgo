@@ -42,9 +42,7 @@ int main() {
     cin.tie(NULL);cout.tie(NULL);
     */
     int arr[] = {10, 20, 30, 40}, n = 4;
-
     int tree[4 * n];
     cout << constructSegmentTree(0, n - 1, 0, arr, tree) << endl;
-
     return 0;
 }
