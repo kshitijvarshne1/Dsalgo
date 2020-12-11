@@ -38,7 +38,6 @@ int MatrixChainOrder(int p[], int i, int j) {
         if (count < min)
             min = count;
     }
-
     return min;
 }
 
@@ -48,8 +47,6 @@ int main() {
     */
     int arr[] = {40, 20, 30, 10, 30};
     int n = sizeof(arr) / sizeof(arr[0]);
-
     cout << "Minimum number of multiplications is " << MatrixChainOrder(arr, 1, n - 1);
-
     return 0;
 }
