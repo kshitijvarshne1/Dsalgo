@@ -23,7 +23,11 @@
 # define ll long long int
 using namespace std;
 
-void countSort(int arr[], int n, int k) {
+void countSort(int arr[], int n) {
+    int k = arr[0];
+    for (int i = 0; i < n; i++) {
+        k = max(k, arr[i]);
+    }
     int count[k];
     for (int i = 0; i < k; i++)
         count[i] = 0;
@@ -49,8 +53,7 @@ int main() {
     */
     int arr[] = {1, 4, 4, 1, 0, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 5;
-    countSort(arr, n, k);
+    countSort(arr, n);
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     return 0;
