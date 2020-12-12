@@ -38,7 +38,6 @@ int mChain(int p[], int n) {
             }
         }
     }
-
     return dp[0][n - 1];
 }
 
@@ -46,10 +45,7 @@ int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
     */
-
     int n = 4, arr[] = {2, 1, 3, 4};
-
     cout << mChain(arr, n);
-
     return 0;
 }
