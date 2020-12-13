@@ -21,8 +21,8 @@
 
 # define modValue 1e9 + 7
 # define ll long long int
+# define N 9
 using namespace std;
-#define N 9
 
 bool isSafe(int board[N][N], int row, int col, int num) {
 
@@ -52,7 +52,6 @@ bool isSafe(int board[N][N], int row, int col, int num) {
             }
         }
     }
-
     return true;
 }
 
@@ -117,7 +116,6 @@ int main() {   /*ios_base::sync_with_stdio(false);
         printGrid(grid);
     else
         cout << "No solution exists";
-
     return 0;
 }
 
