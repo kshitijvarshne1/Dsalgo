@@ -3,7 +3,7 @@
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 13-Dec-20
 *   Time: 7:43 PM
-*   File: RateInMaze2g.cpp
+*   File: RateInMazegfg.cpp
 */
 # include<iostream>
 # include<bits/stdc++.h>
