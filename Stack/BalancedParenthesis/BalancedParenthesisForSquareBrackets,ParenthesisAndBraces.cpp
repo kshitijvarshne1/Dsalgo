@@ -56,7 +56,7 @@ bool isValidExpression(char *str) {
 
 int main() {
     // This program for square brackets , parenthesis and braces
-    char s[100];
+    char s[100000];
     cin >> s;
     if (isValidExpression(s)) {
         cout << "Yes";
