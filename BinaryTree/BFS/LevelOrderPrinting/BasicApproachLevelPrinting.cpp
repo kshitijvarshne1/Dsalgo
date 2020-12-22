@@ -103,3 +103,18 @@ int main() {
  * 9 7 13
  * */
 
+
+
+
+
+
+/*int height(node *root) {
+    if (root == NULL) {
+        return -1;
+    }
+
+    int ls = height(root->left);
+    int rs = height(root->right);
+
+    return max(ls, rs) + 1;
+}*/
