@@ -42,7 +42,7 @@ int main() {
         if (last_occ == -1 || i - current_len > last_occ) {
             current_len += 1;
         }
-            //Expansion + Contraction
+        //Expansion + Contraction
         else {
             if (current_len > max_len) {
                 max_len = current_len;
