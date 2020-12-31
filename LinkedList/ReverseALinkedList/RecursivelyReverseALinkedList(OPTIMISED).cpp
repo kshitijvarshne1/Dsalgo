@@ -71,7 +71,6 @@ int main() {
     }
     head = recursivelyReverse(head);
     print(head);
-
     return 0;
 }
 
