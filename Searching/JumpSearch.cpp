@@ -37,7 +37,6 @@ int jumpSearch(int arr[], int x, int n) {
         if (prev >= n)
             return -1;
     }
-
     // Doing a linear search for x in block
     // beginning with prev.
     while (arr[prev] < x) {
