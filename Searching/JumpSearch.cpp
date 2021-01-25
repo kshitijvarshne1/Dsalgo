@@ -34,7 +34,7 @@ int jumpSearch(int arr[], int x, int n) {
         if (prev >= n)
             return -1;
     }
-    // This while loop is used to find the index nearest to the element
+    // This while loop is used to find the index nearest to the element and if not then simply return -1
     while (arr[prev] < x) {
         prev++;
         if (prev == min(step, n))
