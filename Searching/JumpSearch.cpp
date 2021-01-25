@@ -27,6 +27,7 @@ using namespace std;
 int jumpSearch(int arr[], int x, int n) {
     int step = sqrt(n);
     int prev = 0;
+    //The next while loop is used to find the block in which element is present
     while (arr[min(step, n) - 1] < x) {
         prev = step;
         step += sqrt(n);
