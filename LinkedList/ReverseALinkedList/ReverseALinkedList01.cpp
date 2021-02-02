@@ -50,7 +50,6 @@ void reverseLinkedList(node *&head) {
         c = n;
     }
     head = p;
-
 }
 
 void print(node *head) {
