@@ -89,7 +89,6 @@ void insertAtMiddle(node *&head, int d) {
     n->next = temp->next;
     temp->next = n;
     return;
-
 }
 
 void insertAtTail(node *&head, int d) {
