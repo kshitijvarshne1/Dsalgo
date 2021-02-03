@@ -24,11 +24,100 @@
 # define cin ios_base::sync_with_stdio(false);cin.tie(NULL); cin
 using namespace std;
 
-int main() {
-    /*ios_base::sync_with_stdio(false);
-    cin.tie(NULL);cout.tie(NULL);
-    */
+class node {
+public:
+    int data;
+    node *next;
 
-    return 0;
+    //Constructor
+    node(int d) {
+        data = d;
+        next = NULL;
+    }
+};
+
+void insertAtHead(node *&head, int d) {
+    if (head == NULL) {
+        head = new node(d);
+        return;
+    }
+    node *temp = new node(d);
+    temp->next = head;
+    head = temp;
 }
 
+void print(node *head) {
+    while (head != NULL) {
+        cout << head->data << " -> ";
+        head = head->next;
+    }
+}
+
+void printRecursive(node *head) {
+    if (head == NULL) {
+        return;
+    }
+    cout << head->data << "-> ";
+    print(head->next);
+
+}
+
+int length(node *head) {
+    int c = 0;
+    while (head != NULL) {
+        c += 1;
+        head = head->next;
+    }
+    return c;
+}
+
+void insertAtMiddle(node *&head, int d) {
+    int middle = length(head) / 2;
+    if (head == NULL or middle == 0) {
+        insertAtHead(head, d);
+        return;
+    }
+    // take middle-1 jumps
+    int jumps = 1;
+    node *temp = head;
+    while (jumps <= middle - 1) {
+        temp = temp->next;
+        jumps += 1;
+    }
+    //create a new node
+    node *n = new node(d);
+    n->next = temp->next;
+    temp->next = n;
+    return;
+
+}
+
+void insertAtTail(node *&head, int d) {
+    if (head == NULL) {
+        head = new node(d);
+        return;
+    }
+    node *tail = head;
+    while (tail->next != NULL) {
+        tail = tail->next;
+    }
+    tail->next = new node(d);
+    return;
+}
+
+
+int main() {
+    node *head = NULL;
+    insertAtHead(head, 1);
+    insertAtHead(head, 2);
+    insertAtHead(head, 3);
+    insertAtHead(head, 4);
+    printRecursive(head);
+    insertAtMiddle(head, 55);
+    cout << endl;
+    print(head);
+    cout << endl;
+    insertAtTail(head, 1111);
+    print(head);
+    return 0;
+}
