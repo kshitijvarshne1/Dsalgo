@@ -104,6 +104,16 @@ void insertAtTail(node *&head, int d) {
     return;
 }
 
+void deleteHead(node *&head) {
+    if (head == NULL) {
+        return;
+    }
+    node *temp = head->next;
+    // temp is local variable  (static variable) , after execution of this function it will destroy automatically
+    delete head;
+    head = temp;
+}
+
 
 int main() {
     node *head = NULL;
@@ -117,6 +127,9 @@ int main() {
     print(head);
     cout << endl;
     insertAtTail(head, 1111);
+    print(head);
+    cout << endl;
+    deleteHead(head);
     print(head);
     return 0;
 }
