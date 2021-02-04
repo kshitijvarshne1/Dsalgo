@@ -109,7 +109,7 @@ void deleteHead(node *&head) {
         return;
     }
     node *temp = head->next;
-    // temp is local variable  (static variable) , after execution of this function it will destroy automatically
+    // temp is local variable (static variable) , after execution of this function it will destroy automatically
     delete head;
     head = temp;
 }
