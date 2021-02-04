@@ -114,6 +114,26 @@ void deleteHead(node *&head) {
     head = temp;
 }
 
+bool searchNode(node *head, int element) {
+    while (head != NULL) {
+        if (element == head->data) {
+            return true;
+        }
+        head = head->next;
+    }
+    return false;
+}
+
+// recursively searching
+bool recursivelySearchNode(node *head, int element) {
+    if (head == NULL) {
+        return false;
+    }
+    if (head->data == element) {
+        return true;
+    }
+    recursivelySearchNode(head->next, element);
+}
 
 int main() {
     node *head = NULL;
@@ -131,5 +151,8 @@ int main() {
     cout << endl;
     deleteHead(head);
     print(head);
+    cout << endl << searchNode(head, 5) << endl;
+    print(head);
+    cout << endl << searchNode(head, 55) << endl;
     return 0;
 }
