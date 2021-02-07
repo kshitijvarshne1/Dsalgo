@@ -69,3 +69,21 @@ int main() {
     return 0;
 }
 
+/*
+const int n = 10000000;
+bitset<10000005> b;
+vector<int> primes;
+
+
+For checking no is prime or not using b array
+void sieve() {
+    b.set(); //set 1,1,1,1,1..........
+    b[0] = b[1] = 0;
+    for (ll i = 2; i <= n; i++) {
+        if (b[i]) {
+            for (ll j = i*i; j <= n; j = j + i) {
+                b[j] = 0;
+            }
+        }
+    }
+}*/
