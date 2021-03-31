@@ -35,27 +35,38 @@ public:
         this->left = NULL;
         this.rigtt = NULL
     }
+};
 
-    Node *insert(Node *root, int data) {
-        if (root == NULL) {
-            return new Node(data);
-        }
-
-        if (data <= root->data) {
-            root->left = insert(root->left, data);
-        } else {
-            root->right = insert(root->right, data);
-        }
-        return root;
+Node *insert(Node *root, int data) {
+    if (root == NULL) {
+        return new Node(data);
     }
 
-};
+    if (data <= root->data) {
+        root->left = insert(root->left, data);
+    } else {
+        root->right = insert(root->right, data);
+    }
+    return root;
+}
+
+void inorder(Node *root) {
+    if (root == NULL) {
+        return;
+    }
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
+}
 
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
     */
-
+    Node *root;
+    root = insert(root, 100);
+    root = insert(root, 98);
+    root = insert(root, 101);
 
     return 0;
 }
