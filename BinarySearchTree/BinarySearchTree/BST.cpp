@@ -36,12 +36,26 @@ public:
         this.rigtt = NULL
     }
 
+    Node *insert(Node *root, int data) {
+        if (root == NULL) {
+            return new Node(data);
+        }
+
+        if (data <= root->data) {
+            root->left = insert(root->left, data);
+        } else {
+            root->right = insert(root->right, data);
+        }
+        return root;
+    }
+
 };
 
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
     */
+
 
     return 0;
 }
