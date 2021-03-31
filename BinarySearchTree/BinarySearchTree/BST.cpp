@@ -1,4 +1,4 @@
-/*  
+/*
 *   Created by CLion IDE.
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 31-Mar-21
@@ -33,13 +33,14 @@ public:
     Node(int data) {
         this->data = data;
         this->left = NULL;
-        this.rigtt = NULL
+        this->right = NULL;
     }
 };
 
 Node *insert(Node *root, int data) {
     if (root == NULL) {
-        return new Node(data);
+        root = new Node(data);
+        return root;
     }
 
     if (data <= root->data) {
@@ -59,14 +60,25 @@ void inorder(Node *root) {
     inorder(root->right);
 }
 
+Node *build() {
+    //Read a list of numbers till -1 and also these numbers will be inserted into BST
+    int d;
+    cin >> d;
+    Node *root = NULL;
+
+    while (d != -1) {
+        root = insert(root, d);
+        cin >> d;
+    }
+    return root;
+}
+
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
     */
-    Node *root;
-    root = insert(root, 100);
-    root = insert(root, 98);
-    root = insert(root, 101);
+    Node *root = build();
+    inorder(root);
 
     return 0;
 }
