@@ -24,6 +24,20 @@
 # define cin ios_base::sync_with_stdio(false);cin.tie(NULL); cin
 using namespace std;
 
+class Node {
+public:
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int data) {
+        this->data = data;
+        this->left = NULL;
+        this.rigtt = NULL
+    }
+
+};
+
 int main() {
     /*ios_base::sync_with_stdio(false);
     cin.tie(NULL);cout.tie(NULL);
