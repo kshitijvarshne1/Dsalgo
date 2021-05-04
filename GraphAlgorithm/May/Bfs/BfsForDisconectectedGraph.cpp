@@ -24,10 +24,62 @@
 # define cin ios_base::sync_with_stdio(false);cin.tie(NULL); cin
 using namespace std;
 
+using namespace std;
+
+void printGraph(std::vector<int> adj[], int n) {
+    for (int i = 0; i < n; ++i) {
+        cout << i << " -> ";
+        for (int x : adj[i]) {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+}
+
+void bfsDisconnected(vector<int> adj[], int n) {
+    vector<int> visited(n, 0);
+    for (int i = 0; i < n; ++i) {
+        if (visited[i] == 0) {
+            bfs(adj, n, i, visited)
+        }
+    }
+}
+
+void bfs(std::vector<int> adj[], int n, int source, vector<int> visited) {
+
+    queue<int> q;
+    q.push(source);
+    visited[source] = 1;
+    while (!q.empty()) {
+        int temp = q.front();
+        q.pop();
+        cout << temp << " ";
+        for (int x : adj[temp]) {
+            if (v[x] == 0) {
+                q.push(x);
+                visited[x] = 1;
+            }
+        }
+    }
+    cout << endl;
+}
+
+
+//Undirected graph
 int main() {
-    /*ios_base::sync_with_stdio(false);
-    cin.tie(NULL);cout.tie(NULL);
-    */
+    int n, m;
+    cin >> n >> m;
+    vector<int> adj[n];
+    for (int i = 0; i < m; ++i) {
+        int u, v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+
+    }
+    printGraph(adj, n);
+    bfs(adj, n, 3);
+
 
     return 0;
 }
