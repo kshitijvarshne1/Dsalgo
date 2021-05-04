@@ -24,7 +24,7 @@
 # define cin ios_base::sync_with_stdio(false);cin.tie(NULL); cin
 using namespace std;
 
-//Undirected grapg
+//Undirected graph
 int main() {
     int n, m;
     cin >> n >> m;
