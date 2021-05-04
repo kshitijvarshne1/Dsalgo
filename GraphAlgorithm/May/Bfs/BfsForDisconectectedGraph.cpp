@@ -64,7 +64,6 @@ void bfs(std::vector<int> adj[], int n, int source, vector<int> visited) {
     cout << endl;
 }
 
-
 //Undirected graph
 int main() {
     int n, m;
