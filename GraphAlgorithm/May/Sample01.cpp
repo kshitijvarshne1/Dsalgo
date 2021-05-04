@@ -24,11 +24,26 @@
 # define cin ios_base::sync_with_stdio(false);cin.tie(NULL); cin
 using namespace std;
 
+//Undirected grapg
 int main() {
-    /*ios_base::sync_with_stdio(false);
-    cin.tie(NULL);cout.tie(NULL);
-    */
+    int n, m;
+    cin >> n >> m;
+    vector<int> adj[n];
+    for (int i = 0; i < m; ++i) {
+        int u, v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+
+    }
+
+    for (int i = 0; i < n; ++i) {
+        cout << i << " -> ";
+        for (int x : adj[i]) {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 }
-
