@@ -3,7 +3,7 @@
 *   Author: Kshitij Varshney (kshitijvarshne1)
 *   Date: 04-May-21
 *   Time: 3:07 PM
-*   File: Sample02.cpp
+*   File: SimpleBfs.cpp
 */
 # include<iostream>
 # include<bits/stdc++.h>
