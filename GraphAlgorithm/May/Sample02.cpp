@@ -68,8 +68,6 @@ int main() {
     }
     printGraph(adj, n);
     bfs(adj, n, 3);
-
-
     return 0;
 }
 
