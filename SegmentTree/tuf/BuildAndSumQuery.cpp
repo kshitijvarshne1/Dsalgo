@@ -73,6 +73,5 @@ int main() {
     int right = 3;
     cout << sumQuery(0, 0, n - 1, left, right);
 
-
     return 0;
 }
